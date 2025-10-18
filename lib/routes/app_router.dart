@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../screens/splash_screen.dart';
 import '../screens/login_screen.dart';
 import '../screens/signup_screen.dart';
 import '../screens/forgot_password_screen.dart';
@@ -18,8 +19,13 @@ final goRouterProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authStateProvider);
 
   return GoRouter(
-    initialLocation: '/login',
+    initialLocation: '/splash',
     redirect: (context, state) {
+      // Don't redirect from splash screen
+      if (state.matchedLocation == '/splash') {
+        return null;
+      }
+
       final isLoggedIn = authState.value?.session != null;
       final isLoggingIn = state.matchedLocation == '/login' ||
           state.matchedLocation == '/signup' ||
@@ -37,6 +43,14 @@ final goRouterProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/splash',
+        name: 'splash',
+        pageBuilder: (context, state) => MaterialPage(
+          key: state.pageKey,
+          child: const SplashScreen(),
+        ),
+      ),
       GoRoute(
         path: '/login',
         name: 'login',

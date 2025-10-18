@@ -20,18 +20,59 @@ A full-featured e-commerce mobile application built with Flutter, Supabase, and 
 - Price range filtering
 - Category-based filtering
 
-✅ **UI/UX**
-- Light and Dark theme support
-- Responsive design
-- Beautiful card-based product display
-- Hero animations for smooth transitions
-- Pull-to-refresh functionality
-
 ✅ **State Management & Routing**
 - Flutter Riverpod for state management
 - GoRouter for dynamic routing
 - Proper back button handling
 - Route guards for authentication
+
+## System Interaction
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="ui/1 login screen.png" alt="Home Page" width="150"/><br/>
+      <em>Login Screen</em>
+    </td>
+    <td align="center">
+      <img src="ui/2 splash screen.png" alt="Feature Dashboard" width="150"/><br/>
+      <em>App Splash Screen with Rive Animation</em>
+    </td>
+    <td align="center">
+      <img src="ui/3 product filtering price and category wise.png" alt="Academic Updates and Schedules" width="150"/><br/>
+      <em>Category and Pricewise Product Filtering</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="ui/4 Discount section.png" alt="Internet Usage Tracker" width="150"/><br/>
+      <em>Discount and Featured Products</em>
+    </td>
+    <td align="center">
+      <img src="ui/5 Dynamic product search with debounce.png" alt="E-Library and Question Bank" width="150"/><br/>
+      <em>On-Change Product Search with Debounce</em>
+    </td>
+    <td align="center">
+      <img src="ui/6 Liked product.png" alt="Semester wise Course Results" width="150"/><br/>
+      <em>Liked Products</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="ui/7 Product details.png" alt="E-Banking with AB-Direct" width="150"/><br/>
+      <em>Product Details</em>
+    </td>
+    <td align="center">
+      <img src="ui/8 Shopping cart.png" alt="Smart Wallet" width="150"/><br/>
+      <em>Shopping Cart</em>
+    </td>
+    <td align="center">
+      <img src="ui/9 order confirmation and billing.png" alt="Iut Bus Service Tracker" width="150"/><br/>
+      <em>Billing and Order Confirmation</em>
+    </td>
+  </tr>
+</table>
+
 
 ## Setup Instructions
 
